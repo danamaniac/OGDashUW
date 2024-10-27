@@ -643,14 +643,14 @@ Rectangle {
                     text: Translator.translate("RPM Smoothing", Dashboard.language)//"RPM Smoothing :"
                     color: "white"
                     font.pixelSize: windowbackround.width / 55
-                    visible: Dashboard.ecu == "2"
+                    visible: true
                 }
                 ComboBox {
                     id: smoothrpm
                     width: windowbackround.width / 5
                     height: windowbackround.height / 15
                     font.pixelSize: windowbackround.width / 55
-                    visible: Dashboard.ecu == "2"
+                    visible: true
                     model: [Translator.translate("OFF", Dashboard.language), "2", "3", "4", "5", "6", "7", "8", "9", "10"]
                     //property bool initialized: true
                     onCurrentIndexChanged: {
@@ -678,7 +678,7 @@ Rectangle {
                     text: Translator.translate("Speed Smoothing", Dashboard.language)
                     color: "white"
                     font.pixelSize: windowbackround.width / 55
-                    visible: Dashboard.ecu == "2"
+                    visible: true
                 }
                 ComboBox {
                     id: smoothspeed
@@ -686,7 +686,7 @@ Rectangle {
                     height: windowbackround.height / 15
                     font.pixelSize: windowbackround.width / 55
                     model: [Translator.translate("OFF", Dashboard.language), "2", "3", "4", "5", "6", "7", "8", "9", "10"]
-                    visible: Dashboard.ecu == "2"
+                    visible: true
                     property bool initialized: true
                     onCurrentIndexChanged: {
                         Dashboard.setsmoothspeed(smoothspeed.currentIndex)

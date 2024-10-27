@@ -230,8 +230,8 @@ Rectangle {
         anchors.horizontalCenter: daemons.horizontalCenter
         anchors.leftMargin: parent.width / 20
         anchors.rightMargin: parent.width / 20
-        color: "red"
+        color: "black"
         wrapMode: Text.WordWrap
-        //visible: { (daemonselect.currentIndex == 19 || daemonselect.currentIndex == 21 || daemonselect.currentIndex == 23 ) ? true:false; }
+        visible: { (daemonselect.currentIndex == 19 || daemonselect.currentIndex == 21 || daemonselect.currentIndex == 23 ) ? true:false; }
     }
 }
